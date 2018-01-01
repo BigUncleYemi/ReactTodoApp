@@ -1,0 +1,63 @@
+import React, { Component } from 'react';
+import '../css/App.css';
+import AddTaskForm from './AddTaskForm';
+import Task from './Task';
+import Header from './Header';
+
+
+class App extends Component {
+  constructor() {
+    super();
+	
+  this.addTaskToPanel = this.addTaskToPanel.bind(this);
+  this.removeTask = this.removeTask.bind(this);
+
+    this.state = {
+      Tasks: {},
+      tagline: "React Todo App"
+    };
+  }
+
+  removeTask(key){
+    const Tasks = {...this.state.Tasks};
+    console.log(Tasks);
+    console.log(Tasks[key]);
+    const del = Tasks[key];
+    console.log(del);
+    this.setState={Tasks};
+  }
+
+  addTaskToPanel(Task){
+    const Tasks = {...this.state.Tasks};
+    const timestamp = Date.now();
+    Tasks[`Task-${timestamp}`] = Task;
+  	this.setState({ Tasks });
+	  console.log(Tasks)
+  };
+
+  componentWillMount(){
+    const localStorageRef = localStorage.getItem(`Task-${this.props.tagline}`)
+    
+    if (localStorageRef){
+      this.setState({
+        Tasks: JSON.parse(localStorageRef)
+      });
+    }
+  }
+  componentWillUpdate(nextProps, nextState){
+    console.log( nextProps, nextState);
+    localStorage.setItem(`Task-${this.props.Tasks}`, JSON.stringify(nextState.Tasks));
+  }
+
+  render() {
+    return (
+		<div>
+			<Header tagline={this.state.tagline}/>
+      	<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask}/>
+     		<AddTaskForm addTask={this.addTaskToPanel}/>
+	 	</div>
+    );
+  }
+}
+
+export default App;

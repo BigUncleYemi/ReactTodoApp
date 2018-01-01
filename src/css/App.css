@@ -1,0 +1,141 @@
+/*header*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.App-header {
+  height: 150px;
+  color: #050505ab;
+}
+
+.App-title {
+  font-size: 1.8em;
+  font-weight: 500
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/*addTaskForm*/
+.todo-edit {
+  width: 300px;
+  padding: 30px 10px;
+  margin-top: 2px;
+  border: 1px #d8d1d1 solid;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+}
+
+.todo-edit > input,button,select{
+  display: block;
+}
+
+.todo-edit > input{
+  padding: 10px 50px;
+  margin: 10px 0px 20px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 10px;
+  border: 1px #d8d1d1 solid 
+}
+
+.todo-edit > button{
+  padding: 8px 10px;
+  margin: 20px 0px 5px;
+  background:  rgba(34, 34, 34, 0.522); 
+  color: white;
+  border: 0px;
+}
+
+.todo-edit > select{
+  padding: 5px 10px;
+  margin: 20px !important;
+  background:  rgba(250, 250, 250, 0.857); 
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: #050505ab;
+}
+
+.check-box{
+  color: #050505ab;
+  font-size: 15px;
+}
+
+.todo-edit > label{
+  color: #050505ab;
+  font-size: 1.05em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer{
+  color: #050505ab;
+  padding: 30px;
+  text-transform: capitalize;
+  font-size: 12px
+}
+
+/*Taskview*/
+.task-layout{
+  width: 250px;
+  padding: 25px 0px 20px 30px;
+  margin: 20px;
+  border: 1px #d8d1d1 solid;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+}
+
+.task-layout > h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  color: #050505ab;
+  text-transform: capitalize;
+}
+
+.task-layout > h3{
+  color: #050505ab;
+  font-size: 25px;
+}
+
+.task-layout > p{
+  font-size: 20px;
+  font-style: italic;
+  font-family: new time roman;
+  font-weight: 600
+}
+
+.task-layout > span{
+  font-size: 17px;
+  font-family: new time roman;
+  font-weight: 600;
+  width: 64px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.task-layout > span[disabled]{
+  color: red;
+  font-size: 23px;
+  font-family: new time roman;
+  width: 64px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+  padding-left : 0px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
