@@ -22,9 +22,13 @@ class App extends Component {
     const Tasks = {...this.state.Tasks};
     console.log(Tasks);
     console.log(Tasks[key]);
-    const del = Tasks[key];
-    console.log(del);
-    this.setState={Tasks};
+    delete Tasks[key];
+    //const val = Tasks[key];
+    
+    this.setState({
+      Tasks: {...Tasks}
+    })
+    
   }
 
   addTaskToPanel(Task){
@@ -36,7 +40,7 @@ class App extends Component {
   };
 
   componentWillMount(){
-    const localStorageRef = localStorage.getItem(`Task-${this.props.tagline}`)
+    const localStorageRef = localStorage.getItem(`Task-${this.state.tagline}`)
     
     if (localStorageRef){
       this.setState({
@@ -46,14 +50,15 @@ class App extends Component {
   }
   componentWillUpdate(nextProps, nextState){
     console.log( nextProps, nextState);
-    localStorage.setItem(`Task-${this.props.Tasks}`, JSON.stringify(nextState.Tasks));
+    //const timestamp = Date();
+    localStorage.setItem(`Task-${this.state.tagline}`, JSON.stringify(nextState.Tasks));
   }
 
   render() {
     return (
 		<div>
 			<Header tagline={this.state.tagline}/>
-      	<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask}/>
+      	<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask} />
      		<AddTaskForm addTask={this.addTaskToPanel}/>
 	 	</div>
     );
