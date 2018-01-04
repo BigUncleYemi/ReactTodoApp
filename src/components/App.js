@@ -17,15 +17,6 @@ class App extends Component {
       tagline: "React Todo App"
     };
   }
-  time(){
-    var now = new Date();
-    var h = now.getHours();
-    var m = now.getMinutes();
-    var t = h+':'+m;
-    console.log(t);
-  }
-
-
   removeTask(key){
     const Tasks = {...this.state.Tasks};
     delete Tasks[key];
