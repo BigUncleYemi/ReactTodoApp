@@ -15,9 +15,13 @@ export default class Task extends Component {
         <li key={key}>
           <div  className="task-layout">
                 {removeButton}
+                <p className="label">Task:</p>
                 <h2>{yemi.name} </h2>
+                <p className="label">Time:</p>
                 <h3>{yemi.time}</h3>
-                <p>{yemi.venue}</p>
+                <p className="label">Venue:</p>
+                <h3 className="venue">{yemi.venue}</h3>
+                <p className="label">Priority:</p>
                 <span disabled={isUrgent}>{buttonText}</span>           
             </div>
         </li>
