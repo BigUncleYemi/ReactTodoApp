@@ -87,12 +87,17 @@
 
 /*Taskview*/
 .task-layout{
-  min-width: 250px;
+  min-width: 210px;
   padding: 25px 0px 20px 30px;
   margin: 20px;
   border: 1px #d8d1d1 solid;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
+}
+
+.task-layout > h2,h3{
+  margin-top: 0px;
+  padding-right: 10px;
 }
 
 .task-layout > h2{
@@ -107,13 +112,20 @@
   font-size: 25px;
 }
 
-.task-layout > p{
+.venue{
   font-size: 20px;
   font-style: italic;
   font-family: new time roman;
   font-weight: 600
 }
 
+.label{
+  font-size: 18px;
+  font-style: italic;
+  font-family: new time roman;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
 .task-layout > span{
   font-size: 17px;
   font-family: new time roman;
