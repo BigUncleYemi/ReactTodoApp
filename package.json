@@ -5,11 +5,24 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-addons-update": "^15.6.2",
     "react-dom": "^16.2.0",
-    "react-router": "4.0.0-alpha.3",
     "react-scripts": "1.0.17"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigUncleYemi/ReactTodoApp.git"
+  },
+  "keywords": [
+    "reactjs",
+    "spa",
+    "todo"
+  ],
+  "author": "Oyebanji Olayemi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigUncleYemi/ReactTodoApp/issues"
+  },
+  "homepage": "https://github.com/BigUncleYemi/ReactTodoApp#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
