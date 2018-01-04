@@ -52,8 +52,10 @@ class App extends Component {
     return (
 		<div>
 			<Header tagline={this.state.tagline}/>
+      <div className="layout">
       	<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask} />
      		<AddTaskForm addTask={this.addTaskToPanel}/>
+      </div>   
 	 	</div>
     );
   }

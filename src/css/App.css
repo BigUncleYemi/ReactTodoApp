@@ -1,6 +1,7 @@
 /*header*/
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -27,11 +28,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+/*app layout*/
+.layout{
+  display: flex;
+  flex-wrap: wrap;
+}
 /*addTaskForm*/
 .todo-edit {
   max-width: 300px;
   padding: 30px 10px;
   margin-top: 2px;
+  margin-left: 20px;
   border: 1px #d8d1d1 solid;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
@@ -87,10 +94,11 @@
 
 /*Taskview*/
 .task-layout{
-  min-width: 210px;
+  width: 210px;
   padding: 25px 0px 20px 30px;
   margin: 20px;
   border: 1px #d8d1d1 solid;
+  background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
 }
@@ -98,6 +106,7 @@
 .task-layout > h2,h3{
   margin-top: 0px;
   padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .task-layout > h2{
@@ -159,4 +168,26 @@ ul{
   background: red;
   border: 1px red solid;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+/*css transition*/
+.task-enter{
+transition: all 0.5s;
+transform: translateX(-120%);
+padding: 0 !important;
+z-index: -1;
+}
+.task-enter-active{
+  padding: 2rem 0 !important;
+  transform: translateX(0);
+}
+
+.task-leave{
+transition: all 0.5s;
+transform: translateX(0);
+z-index: -1;
+}
+.task-leave-active{
+  transform: translateX(120%);
+  padding: 0;
 }

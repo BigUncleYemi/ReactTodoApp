@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 export default class Task extends Component {
 
@@ -32,11 +34,17 @@ export default class Task extends Component {
         const orderIds = Object.keys(this.props.Tasks);
     
         return (
-                <ul className="task">
+                <CSSTransitionGroup
+                className="task"
+                component="ul"
+                transitionName="task"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}
+              >
                     {
                         orderIds.map(this.renderTask)
                     }
-                </ul>            
+                </CSSTransitionGroup>           
         );
     }
 }
