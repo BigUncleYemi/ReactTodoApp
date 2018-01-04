@@ -17,14 +17,18 @@ class App extends Component {
       tagline: "React Todo App"
     };
   }
+  time(){
+    var now = new Date();
+    var h = now.getHours();
+    var m = now.getMinutes();
+    var t = h+':'+m;
+    console.log(t);
+  }
+
 
   removeTask(key){
     const Tasks = {...this.state.Tasks};
-    console.log(Tasks);
-    console.log(Tasks[key]);
     delete Tasks[key];
-    //const val = Tasks[key];
-    
     this.setState({
       Tasks: {...Tasks}
     })
@@ -50,7 +54,6 @@ class App extends Component {
   }
   componentWillUpdate(nextProps, nextState){
     console.log( nextProps, nextState);
-    //const timestamp = Date();
     localStorage.setItem(`Task-${this.state.tagline}`, JSON.stringify(nextState.Tasks));
   }
 
