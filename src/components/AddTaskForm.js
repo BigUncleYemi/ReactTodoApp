@@ -7,7 +7,8 @@ class AddTaskForm extends Component {
 			name: this.name.value,
 			time: this.time.value,
 			venue: this.venue.value,
-			priority: this.priority.value
+      priority: this.priority.value,
+      notes: this.note.value
 		};
     this.props.addTask(Task);
     this.taskForm.reset();
@@ -28,6 +29,8 @@ class AddTaskForm extends Component {
               <option value="Free">Free</option>
               <option value="URGENT">Urgent!</option>
             </select>
+            <p id="notestask">Notes</p>
+            <textarea ref={(input) => this.note = input } name="notesTask" id="" cols="30" rows="10"></textarea>
             <button type="submit">Save Task</button>		
           </form>
           <div className="footer">

@@ -74,9 +74,10 @@
   color: #050505ab;
 }
 
-.check-box{
-  color: #050505ab;
-  font-size: 15px;
+.todo-edit > p{
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .todo-edit > label{
@@ -161,6 +162,10 @@ ul{
   flex-wrap: wrap;
 }
 
+.notes{
+  font-style: italic;
+  font-size: 18px;
+}
 /*remove button*/
 .remove{
   border-radius: 100%;

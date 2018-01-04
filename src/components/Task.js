@@ -24,7 +24,8 @@ export default class Task extends Component {
                 <p className="label">Venue:</p>
                 <h3 className="venue">{yemi.venue}</h3>
                 <p className="label">Priority:</p>
-                <span disabled={isUrgent}>{buttonText}</span>           
+                <span disabled={isUrgent}>{buttonText}</span>
+                <p className="notes">{yemi.notes}</p>           
             </div>
         </li>
       )
