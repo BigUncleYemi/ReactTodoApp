@@ -14,7 +14,7 @@ class App extends Component {
 
     this.state = {
       Tasks: {},
-      tagline: "React Todo App"
+      tagline: "We Got You Covered"
     };
   }
   removeTask(key){
@@ -56,6 +56,13 @@ class App extends Component {
       	<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask} />
      		<AddTaskForm addTask={this.addTaskToPanel}/>
       </div>   
+      <center>
+        <footer >
+            <div className="footer">
+                <span>built with &hearts; from big uncle yemi</span>
+            </div>
+        </footer>
+      </center>
 	 	</div>
     );
   }

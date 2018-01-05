@@ -33,9 +33,6 @@ class AddTaskForm extends Component {
             <textarea ref={(input) => this.note = input } name="notesTask" id="" cols="30" rows="10"></textarea>
             <button type="submit">Save Task</button>		
           </form>
-          <div className="footer">
-            <span>built with &hearts; from big uncle yemi</span>
-          </div>
         </center>
       </div>
     );

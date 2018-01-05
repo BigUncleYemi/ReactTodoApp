@@ -7,7 +7,10 @@ export default class Header extends Component {
         return (
             <header className="App">
                 <div className="App-header">
+                <center>
                     <img src={logo} alt="logo" />
+                    <p>{this.props.tagline}</p>
+                 </center>   
                 </div>
             </header>
         );

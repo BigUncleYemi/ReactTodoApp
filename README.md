@@ -1,8 +1,8 @@
 ##whatTodo app
 
-this is a Todo application (spa) builted with reactjs.
+This is a Todo application (spa) builted with reactjs.
 
-it is very easy to use and make as a beginner project as few librarys were use to be it:
+it is very easy to use and built as a beginner project as few librarys were use to built it:
 ++react-addons-css-transition-group
 ++creact-react-app package 
 
@@ -31,26 +31,26 @@ onces that is through installing all you have to do is to run
 ## npm start
 
 this will start the app on your default browser and will be use to aid the app development.
-note:
+*note:*
 all changes done are automatically updated on the browser as you save the project each time, coutesy of "react-script"
 
 ##SRC folder
 ##css
 all css script use in the app are in App.css and are sectioned according to each components and fectures that uses them.
-note: 
-index.css is not really doing anything it just basically came with creact-react-app package and i dont feel like delecting it
+*note:* 
+index.css is not really doing anything it just basically came with creact-react-app package and i dont feel like delecting it :p
 
-to get creact-react-app node package 
-run on terminal or CMD as it applies to you 
+*to get creact-react-app node package* 
+*run on terminal or CMD as it applies to you*
 ##npm install create-react-app
 ##create-react-app name-of-app
 
 ##components
 all the components used in the app are in the components folders.
 ++Header.js
-this is basically the component that renders the header of the app
+this is basically the component that renders the header of the app.
 ++Task
-this components is basically contains the layout of the tasks to be displayed in the app.
+this components basically contains the layout of the tasks to be displayed in the app.
 it is also reponsible for the displaying of the Tasks.
 ++AddTaskForm
 this is the component that is responsible for taking input of task info to be displayed by the task component.
@@ -60,7 +60,7 @@ this is the component where everything about the app is;
 the other components, css, images e.t.c
 it is the only components rendered by index.js.
 All state and other fundamental data to be used by the app are found here.
-##note: not alway all fundemental date
+*note: not always all fundemental date*
 
 ##img folder 
 contains all images used by the app.
