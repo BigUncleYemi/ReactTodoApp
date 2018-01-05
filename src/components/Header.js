@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../img/logo.svg';
+import logo from '../img/logo.png';
 import '../css/App.css';
 export default class Header extends Component {
     
@@ -7,8 +7,7 @@ export default class Header extends Component {
         return (
             <header className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">{this.props.tagline}</h1>
+                    <img src={logo} alt="logo" />
                 </div>
             </header>
         );
