@@ -17,7 +17,7 @@ and some basic advance feacture:
 ++storing tasks info on device browser so you dont need to worry about data lost.
 ++dynamic movement of the tasks cards.
 
-you can view the app at www.whatTodo.com
+you can view the app at [whatodos.herokuapp.com](whatodos.herokuapp.com) 
 
 ##creating the app 
 you will need the following installed on your computer to work on this repo:
