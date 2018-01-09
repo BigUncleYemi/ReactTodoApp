@@ -19,6 +19,8 @@ export default class Task extends Component {
                 {removeButton}
                 <p className="label">Task:</p>
                 <h2>{yemi.name} </h2>
+                <p className="label">Date:</p>
+                <h3>{yemi.date}</h3>
                 <p className="label">Time:</p>
                 <h3>{yemi.time}</h3>
                 <p className="label">Venue:</p>

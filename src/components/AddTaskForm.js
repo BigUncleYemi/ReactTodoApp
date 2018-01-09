@@ -5,6 +5,7 @@ class AddTaskForm extends Component {
 		e.preventDefault();
 		var Task =  {
 			name: this.name.value,
+			date: this.date.value,
 			time: this.time.value,
 			venue: this.venue.value,
       priority: this.priority.value,
@@ -20,6 +21,8 @@ class AddTaskForm extends Component {
           <form  ref={(input) => this.taskForm = input} className="todo-edit" onSubmit={(e) => this.createTask(e)}>
             <label htmlFor="nameTask">Enter Name of Task</label>
             <input ref={(input) => this.name = input } type="text" id="nameTask" placeholder="e.g To play with Bee-Jay" required />
+						<label htmlFor="nameTask">Enter Name of Task</label>
+						<input ref={(input) => this.date = input } type="date" id="dateTask" required />
             <label htmlFor="timeTask">Set Task Due Time </label>
             <input ref={(input) => this.time = input } type="time" id="timeTask" required />
             <label htmlFor="venueTask">Enter Venue of Task</label>
