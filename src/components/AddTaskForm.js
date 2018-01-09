@@ -21,7 +21,7 @@ class AddTaskForm extends Component {
           <form  ref={(input) => this.taskForm = input} className="todo-edit" onSubmit={(e) => this.createTask(e)}>
             <label htmlFor="nameTask">Enter Name of Task</label>
             <input ref={(input) => this.name = input } type="text" id="nameTask" placeholder="e.g To play with Bee-Jay" required />
-						<label htmlFor="nameTask">Enter Name of Task</label>
+						<label htmlFor="nameTask">Enter Date of Task</label>
 						<input ref={(input) => this.date = input } type="date" id="dateTask" required />
             <label htmlFor="timeTask">Set Task Due Time </label>
             <input ref={(input) => this.time = input } type="time" id="timeTask" required />
