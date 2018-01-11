@@ -2,13 +2,23 @@
   "short_name": "whaTodo",
   "name": "whaTodo Todo App",
   "icons": [
+     {
+      "src": "favourite.ico",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
     {
       "src": "favourite.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "favourite.ico",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
-  "start_url": ": "/?utm_source=homescreen",
+  "start_url": "./index.html?launcher=true",
   "display": "standalone",
   "theme_color": "#050505ab",
   "background_color": "#ffffff"
