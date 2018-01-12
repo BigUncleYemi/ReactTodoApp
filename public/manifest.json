@@ -3,17 +3,17 @@
   "name": "whaTodo Todo App",
   "icons": [
      {
-      "src": "favourite.ico",
+      "src": "favourite.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "favourite.ico",
+      "src": "favourite.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "favourite.ico",
+      "src": "favourite.png",
       "type": "image/png",
       "sizes": "192x192"
     }
