@@ -1,0 +1,25 @@
+{
+  "short_name": "whaTodo",
+  "name": "whaTodo Todo App",
+  "icons": [
+     {
+      "src": "favourite.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "favourite.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "favourite.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./index.html?launcher=true",
+  "display": "standalone",
+  "theme_color": "#050505ab",
+  "background_color": "#ffffff"
+}
