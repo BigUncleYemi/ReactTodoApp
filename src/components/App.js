@@ -31,7 +31,6 @@
 			const timestamp = Date.now();
 			Tasks[`Task-${timestamp}`] = Task;
 			this.setState({ Tasks });
-			console.log(Tasks)
 		};
 
 		componentWillMount(){
@@ -44,7 +43,6 @@
 			}
 		}
 		componentWillUpdate(nextProps, nextState){
-			console.log( nextProps, nextState);
 			localStorage.setItem(`Task-${this.state.tagline}`, JSON.stringify(nextState.Tasks));
 		}
 
