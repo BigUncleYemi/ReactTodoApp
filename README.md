@@ -17,7 +17,7 @@ and some basic advance feacture:
 ++storing tasks info on device browser so you dont need to worry about data lost.
 ++dynamic movement of the tasks cards.
 
-you can view the app at [whatodos.herokuapp.com](https://whatodos.herokuapp.com) 
+you can view the app at [biguncleyemi.github.io/whatodos](https://biguncleyemi.github.io/whatodos/) 
 
 ##creating the app 
 you will need the following installed on your computer to work on this repo:
