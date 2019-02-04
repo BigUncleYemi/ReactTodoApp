@@ -16,7 +16,10 @@
       return (
           <li key={key}>
             <div  className="task-layout">
-                  {removeButton}
+                <div style={{ display: 'flex'}}>
+                {removeButton}
+                  <i className="fa fa-pen" style={{margin: '5px 10px'}}/>
+                </div>
                   <p className="label">Task:</p>
                   <h2>{yemi.name} </h2>
                   <p className="label">Date:</p>
