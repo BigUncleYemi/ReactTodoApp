@@ -12,13 +12,14 @@
           const yemi = this.props.Tasks[key];
           const isUrgent = yemi.priority === 'URGENT';
           const buttonText = isUrgent ? 'Urgent!' : 'Free';
-          const removeButton = <button className="remove" onClick={() => this.props.removeTask(key)}>&times;</button>
+          const removeButton = <button className="remove" onClick={() => this.props.removeTask(key)}>&times;</button>;
+          const updateButton = <i className="fa fa-pen" style={{margin: '5px 10px', cursor: 'pointer'}} onClick={() => this.props.UpdateTask(key)}/>;
       return (
           <li key={key}>
             <div  className="task-layout">
                 <div style={{ display: 'flex'}}>
-                {removeButton}
-                  <i className="fa fa-pen" style={{margin: '5px 10px'}}/>
+                  {removeButton}
+                  {updateButton}
                 </div>
                   <p className="label">Task:</p>
                   <h2>{yemi.name} </h2>

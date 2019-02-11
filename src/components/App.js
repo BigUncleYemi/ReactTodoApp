@@ -11,6 +11,7 @@
 
 		this.addTaskToPanel = this.addTaskToPanel.bind(this);
 		this.removeTask = this.removeTask.bind(this);
+		this.UpdateTask = this.UpdateTask.bind(this);
 
 			this.state = {
 				Tasks: {},
@@ -33,6 +34,20 @@
 			this.setState({ Tasks });
 		};
 
+		UpdateTask(Key){
+			const Tasks = {...this.state.Tasks};
+			document.getElementById('nameTask').value = Tasks[Key].name;
+			document.getElementById('dateTask').value = Tasks[Key].date;
+			document.getElementById('timeTask').value = Tasks[Key].time;
+			document.getElementById('venueTask').value = Tasks[Key].venue;
+			document.getElementById('priorityTask').value = Tasks[Key].priority;
+			document.getElementById('notesTask').value = Tasks[Key].notes;
+			delete Tasks[Key];
+			this.setState({
+				Tasks: {...Tasks}
+			})
+		}
+
 		componentWillMount(){
 			const localStorageRef = localStorage.getItem(`Task-${this.state.tagline}`)
 
@@ -51,7 +66,7 @@
 			<div>
 				<Header tagline={this.state.tagline}/>
 				<div className="layout">
-					<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask} />
+					<Task Tasks={this.state.Tasks} tagline={this.state.tagline} removeTask={this.removeTask} UpdateTask={this.UpdateTask} />
 					<AddTaskForm addTask={this.addTaskToPanel}/>
 				</div>   
 				<center>

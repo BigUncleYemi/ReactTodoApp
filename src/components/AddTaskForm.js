@@ -28,12 +28,12 @@
 							<label htmlFor="venueTask">Enter Venue of Task</label>
 							<input ref={(input) => this.venue = input } type="text" id="venueTask" placeholder="e.g Mayfair, Big Ben"/>
 							<label htmlFor="priortyTask">Select Priority of Task</label>
-							<select ref={(input) => this.priority = input } > 
+							<select ref={(input) => this.priority = input } id="priorityTask"> 
 								<option value="Free">Free</option>
 								<option value="URGENT">Urgent!</option>
 							</select>
 							<p id="notestask">Notes</p>
-							<textarea ref={(input) => this.note = input } name="notesTask" id="" cols="30" rows="10"></textarea>
+							<textarea ref={(input) => this.note = input } name="notesTask" id="notesTask" cols="30" rows="10"></textarea>
 							<button type="submit">Save Task</button>		
 						</form>
 					</center>
