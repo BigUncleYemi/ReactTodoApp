@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/BigUncleYemi/ReactTodoApp/issues"
   },
-  "homepage": "https://BigUncleYemi.github.io/whaTodo/",
+  "homepage": "https://BigUncleYemi.github.io/whaTodos/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
